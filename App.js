@@ -11,18 +11,11 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="SearchScreen">
-        <Stack.Screen name="SearchScreen" component={SearchScreen} />
+      <Stack.Navigator initialRouteName="Business Search">
+        <Stack.Screen name="Business Search" component={SearchScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+const styles = StyleSheet.create({});
