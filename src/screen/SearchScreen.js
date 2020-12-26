@@ -5,7 +5,7 @@ import SerachBar from "../components/SerachBar";
 import yelp from "../api/yelp";
 import ResultsList from "../components/ResultsList";
 
-const SearchScreen = () => {
+const SearchScreen = ({ navigation }) => {
   const [term, setterm] = useState("");
   const [results, setresults] = useState([]);
   const [errorMessage, seterrorMessage] = useState("");
@@ -49,9 +49,18 @@ const SearchScreen = () => {
         <ResultsList
           title="Cost Effective"
           results={filterResultByPrice("$")}
+          navigation={navigation}
         />
-        <ResultsList title="Big Pricier" results={filterResultByPrice("$$")} />
-        <ResultsList title="Big Spender" results={filterResultByPrice("$$$")} />
+        <ResultsList
+          title="Big Pricier"
+          results={filterResultByPrice("$$")}
+          navigation={navigation}
+        />
+        <ResultsList
+          title="Big Spender"
+          results={filterResultByPrice("$$$")}
+          navigation={navigation}
+        />
       </ScrollView>
     </View>
   );
