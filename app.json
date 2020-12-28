@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "A simple app  to search food restaurant with api",
+    "githubUrl": "https://github.com/parthkanani93/Food-App-React-Native"
   }
 }
